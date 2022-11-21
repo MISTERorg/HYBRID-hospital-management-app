@@ -1,0 +1,191 @@
+// header
+ion-header{
+  ion-toolbar{
+    --background:rgb(10, 100, 235);
+   ion-button{
+
+     p{
+      color: #ffffff;
+      font-size: 11px;
+     }
+     ion-icon{
+       width: 15px;
+       padding-bottom: 4px;
+     }
+
+     background-color: #ffffff00;
+   }
+  }
+}
+// content style
+ion-content{
+
+
+  ion-icon{
+    color: #ffffff;
+  }
+  ion-fab{
+    ion-fab-button{
+      margin-left: 15px;
+    }
+    align-content: center;
+    color: rgb(10, 100, 235);
+    top:350px;
+    right: 10px;
+  }
+  ion-text{
+    text-align: center;
+  }
+}
+
+.buy_card{
+  width: 25%;
+  margin: -10px;
+  ion-card{
+    --background:rgb(10, 100, 235);
+    height: auto;
+    text-align: center;
+    ion-avatar{
+      margin: 0 auto;
+    }
+
+
+  }
+
+}
+// sliders style
+// 2nd  carousel
+@import '~swiper/scss';
+@import '~@ionic/angular/css/ionic-swiper';
+
+.swiper {
+  width: 100%;
+  object-fit: cover;
+
+}
+ion-slides{
+  --bullet-background:rgb(255, 3, 221);
+  --bullet-background-active:rgb(3, 70, 255);
+}
+.swiper{
+  width: auto;
+  height: auto;
+  margin: 10px;
+  .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .swiper-slide:nth-child(1n){
+    border-color: rgb(0, 0, 255);
+  }
+  .swiper-slide:nth-child(2n){
+    border-color: rgb(0, 0, 0);
+  }
+  .swiper-slide:nth-child(3n){
+    border-color: rgb(0, 217, 255);
+  }
+  .swiper-slide:nth-child(4n){
+    border-color: rgb(162, 0, 255);
+  }
+  .swiper-slide:nth-child(5n){
+    border-color: rgb(255, 0, 149);
+  }
+
+
+}
+
+.swiper .swiper-slide img{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 50%;
+}
+// fab next to slider
+// more button
+.more{
+  margin-top: 5px;
+  background-color: #ffffff;
+  border-bottom: solid 2px rgb(10, 100, 235) ;
+  p{
+    color:rgb(10, 100, 235);
+  }
+}
+
+  // content
+  ion-content{
+  
+    .ios ion-row{
+     margin-bottom: -30px;
+   }
+  }
+  // cards design
+  
+  ion-card{
+    border:1px outset rgb(10, 100, 235) ;
+    --background:rgb(10, 100, 235);
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    overflow: visible;
+
+  
+    ion-card-content{
+      border: none;
+      overflow: visible;
+  
+      padding: none;
+      img{
+        width: 90%;
+        height: auto;
+        margin: none;
+        padding: none;
+  
+      }
+    }
+    ion-card-subtitle{
+      text-align: center;
+      font: bold 10px;
+      color: white;
+    }
+  
+  }
+    // ionic-badge
+    ion-badge{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        border: solid 1px white;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ion-icon{
+            width: 30px;
+        }
+    }
+// menu icon
+$size: 25px;
+$height: 14px;
+$width: 30px;
+
+.menu {
+  position: relative;
+  color: white;
+  height: $size;
+  width: $size;
+  margin-top: calc(var(--ion-safe-area-top) + 6px);
+  margin-left: calc(var(--ion-safe-area-top) - 12px );
+  cursor: pointer;
+  overflow: hidden;
+  &__icon {
+  position: absolute;
+  width: $width;
+  height: $height;
+  transform: translate(-50%, -50%);
+  }
+
+  }

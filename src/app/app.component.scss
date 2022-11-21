@@ -1,0 +1,114 @@
+ion-fab{
+    z-index: 999;
+  }
+  ion-menu {
+      --ion-background-color: rgb(10, 100, 235);
+      ion-toolbar {
+        --border-style: solid;
+        --border-width: 3px;
+        --border-color: var(--ion-color-light, rgb(255, 255, 255));
+        --background: var(--color-notWhite, #ff0000);
+      }
+    }
+    ion-list,ion-item {
+      --ion-item-background: transparent; // especially for dark mode
+    }
+    .headerToolbar {
+      padding: 20px 16px 16px;
+      background-color: rgb(10, 100, 235); // especially for dark mode
+      ion-avatar.userImage {
+      width: 100px;
+      height: 80px;
+      box-shadow: 2px 4px 8px 0px var(--shadow-color);
+      }
+      div.nameContainer {
+        margin-top: 8px;
+        margin-left: 4px;
+        .userName {
+        font-size: 18px;
+        font-family: WorkSans-SemiBold;
+        color: var( --ion-color-dark-shade); // grey
+        }
+      }
+    }
+    ion-item.drawerItem {
+    --padding-top: 8px;
+    --padding-bottom: 8px;
+    --padding-start: 0px;
+    --padding-end: 0px;
+    overflow: hidden;
+    // Just to fix radius gets removed on iOS after translateX animation issue
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    ion-item.drawerInnerItem {
+    --background: var(--background);
+    width: var(--width);
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    position: absolute;
+    }
+    .icon-margin {
+    margin-left: 14px;
+    }
+    
+    $blueTint: invert(46%) sepia(90%) saturate(2764%) hue-rotate(189deg)
+    brightness(104%) contrast(91%);
+    $blackTint: brightness(0%);
+    .imgTintBlue {
+    filter: $blueTint;
+    }
+    .imgTintBlack {
+    filter: $blackTint;
+    @media (prefers-color-scheme: dark) {
+    filter: $blackTint invert(1);
+    }
+    }
+    }
+  
+    .material-icons.colorRed {
+    color: rgb(217, 0, 255);
+    }
+    $size: 25px;
+    $height: 14px;
+    $width: 30px;
+  
+  
+    .menu {
+    position: relative;
+    color: rgba(255, 255, 255, 0);
+    height: $size;
+    width: $size;
+    margin-top: calc(var(--ion-safe-area-top) + 6px);
+    margin-left: calc(var(--ion-safe-area-top) - 12px );
+    cursor: pointer;
+    overflow: hidden;
+    &__icon {
+    position: absolute;
+    width: $width;
+    height: $height;
+    transform: translate(-50%, -50%);
+    }
+  
+    }
+    
+    ion-fab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+   .logout{
+    --background: linear-gradient(135deg,#ff0000 10%,#ff4800 100% );
+    color: white;
+    width: 90%;
+    font-size: 17px;
+    margin-left: 4.9%;
+   }
+    
+    
+  

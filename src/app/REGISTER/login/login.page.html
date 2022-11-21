@@ -1,0 +1,35 @@
+
+
+<ion-content>
+  <div class="register_logo">
+    <ion-thumbnail  >
+      <img src="../../../assets/image/loginp.png" alt="" srcset="">
+    </ion-thumbnail>
+  </div>
+  <div class="container"  >
+      
+    <ion-card color="dark" class="form" >
+      <div class="login_head">
+        <p>
+          <b>OHH <span class="exclam">!</span> YOU ARE NOT YET A MEMBER</b>
+        </p>
+        <ion-button class="nextA" expand="block" shape="round" size="small" [routerLink]="['/registration']" >Signup</ion-button>    
+      </div>
+
+  <ion-item lines="full">
+    <ion-input  placeholder="Email" type="email"  #email required></ion-input>
+
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-input placeholder="Password" type="password" #password required></ion-input>
+
+  </ion-item>
+
+    <ion-button type="submit" (click)="logIn(email, password)" class="next" expand="block" shape="round" size="small" >Login</ion-button>
+    <ion-button type="submit" (click)="authService.GoogleAuth()" class="nextB" expand="block" shape="round" size="small"> Login with Google </ion-button>
+    <ion-button  class="forgotPwd"  expand="block" shape="round" size="small" [routerLink]="['/password-reset']" >Password Reset</ion-button>
+
+</ion-card>
+</div>
+</ion-content>

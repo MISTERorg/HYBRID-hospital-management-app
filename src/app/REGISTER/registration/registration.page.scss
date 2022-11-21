@@ -1,0 +1,26 @@
+
+// the content
+ion-content {
+    --ion-background-color: var(--color-notWhite, linear-gradient(to right,#ffffff , rgb(10, 100, 235)));
+}
+ion-card {
+    background-color: rgba(0, 132, 255, 0.22);
+    ion-item {
+      --border-style: solid;
+      --border-color: var(--ion-color-light, rgb(255, 255, 255));
+      --background: var(--color-notWhite, rgb(10, 100, 235) );
+      
+      ion-label{  
+        color: rgb(255, 255, 255);
+        
+    }
+
+    }
+  
+
+  }
+  ion-input{
+      color: white;
+  }
+
+

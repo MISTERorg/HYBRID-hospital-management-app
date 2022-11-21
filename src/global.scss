@@ -1,0 +1,164 @@
+
+
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+// global.scss
+@import '~swiper/scss';
+@import '~swiper/scss/autoplay';
+@import '~swiper/scss/keyboard';
+@import '~swiper/scss/pagination';
+@import '~swiper/scss/scrollbar';
+@import '~swiper/scss/zoom';
+@import '~@ionic/angular/css/ionic-swiper';
+@import '~swiper/scss/effect-fade';
+@import '~swiper/scss/effect-flip';
+@import '~swiper/scss/effect-cube';
+@import '~swiper/scss/lazy';
+@import '~leaflet/dist/leaflet.css';
+
+.img1{
+    width: 50px;
+    border: none;
+    padding: 0px;
+    margin: none;
+}
+.transparent-modal{
+    --background:rgba(0, 0, 251, 0.322);
+    &::part(content){
+        backdrop-filter: blur(12px);
+    }
+    ion-content{
+        --background: transparent;
+    }
+}
+.small-modal{
+    --background:rgba(0, 0, 251, 0.322);
+    
+    &::part(backdrop){
+        backdrop-filter: blur();
+        background-color: rgb(0, 0, 0);
+
+    }
+    &::part(content){
+        width: 90%;
+        height:90%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        border-radius: 10px;
+    }
+ 
+}
+.custom-popover{
+    //main modal background
+
+
+    --background: rgba(0, 0, 251, 0.322);
+    &::part(backdrop){
+        backdrop-filter: blur(50px);
+        background-color: blue;
+        width: 100%;
+        top: 0;
+
+    }
+    //main modal box
+    &::part(content){
+        top:0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        border-radius: 10px;
+        left: 0;
+        overflow: hidden;
+
+
+    
+    }
+ 
+}
+.nextA{
+    animation: slide1  infinite  ease-in-out both;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 10px;
+    --background:rgb(10, 100, 235);
+    }
+//button animation
+@keyframes slide1{
+    from{
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+
+    }
+    10%{
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+    17%{
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+    33%{
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+    45%{
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+
+}
+
+    .next{
+        margin: 10px;
+        --background:#e753db ;
+    }
+    .nextB{
+        margin: 10px;
+        --background: rgb(10, 100, 235) ;
+    }
+
+    // HEADER AND BODY
+    // header
+ion-header{
+    ion-toolbar{
+      --background:#a800e6 ;
+    }
+  }
+  // image lodo
+  .log1{
+    height: 60px;
+    width:100%;
+    top: 15px;
+    text-align: center;
+    z-index: 100;
+    img{
+      width: 60px;
+    }
+  }

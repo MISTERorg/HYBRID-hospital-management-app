@@ -1,0 +1,68 @@
+ion-content{
+    --background: rgb(10, 100, 235);
+}
+//inner modal
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    bottom: 0px;
+    overflow: hidden;
+    
+}
+
+//logo
+ion-thumbnail{
+    --size: 40%;
+    text-align: center;
+    margin-top: 10%;
+    height: 40%;
+
+}
+.register_logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+//signup text and button
+.login_head{
+    display: block;
+    text-align: center;
+    p{
+        color: rgb(10, 100, 235) ;
+        font-size: 4.3vw;
+        padding: 2px;
+    }
+    .exclam{
+        color: rgb(255, 0, 204);
+    }
+    
+    
+}
+.tc{
+    --background: white;
+    color:rgb(10, 100, 235);
+}
+//lobin inputs
+
+.form{
+    
+    padding: 10px;
+    ion-item{
+        margin: 10px;
+        --background: white;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 1px ;
+        border-color: grey;
+        margin-top: 10px;
+        color: rgb(10, 100, 235);
+
+    }
+}
+.forgotPwd{
+    --background: linear-gradient(135deg,#c3c3c3 10%,#868686 100% );
+}

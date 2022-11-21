@@ -1,0 +1,159 @@
+
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button   >
+                <p>EMERGENCY</p> 
+                <ion-icon slot="end" name="chevron-forward-outline" color="dark"></ion-icon>
+
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-fab  class="log1" vertical="top" >
+    <img src="../../../assets/image/angel beautiful white wings.png" alt="" srcset="">
+</ion-fab >
+<ion-fab>
+    <ion-icon class="menu menu--back5 ion-activatable"  name="menu"></ion-icon>
+</ion-fab>
+<ion-content color="dark">
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-card>
+                        <ion-card-content>
+                            <ion-badge color="warning"><ion-icon name="card-outline" ></ion-icon></ion-badge>
+                            <img src="../../../assets/image/consult.png" alt="" srcset="">
+                        </ion-card-content>
+                        <ion-card-subtitle>APPOINT</ion-card-subtitle>
+                    </ion-card>
+                </ion-col>
+                <ion-col>
+                    <ion-card (click)="openLink()">
+                        <ion-card-content>
+                            <ion-badge color="warning"><ion-icon name="card-outline"></ion-icon></ion-badge>
+                            <img src="../../../assets/image/videoC.png" alt="" srcset="">
+                        </ion-card-content>
+                        <ion-card-subtitle>CONSULT</ion-card-subtitle>
+                    </ion-card>
+                </ion-col>
+            </ion-row >
+            <ion-row>
+                <ion-col>
+                    <ion-card (click)="forum()">
+                        <ion-card-content>
+                            <img src="../../../assets/image/chat.png" alt="" srcset="">
+                        </ion-card-content>
+                        <ion-card-subtitle>PATIENT FORUM</ion-card-subtitle>
+                    </ion-card>
+                </ion-col>
+                <ion-col>
+                    <ion-card >
+                        <ion-card-content>
+                            <img src="../../../assets/image/help1.png" alt="" srcset="">
+                        </ion-card-content>
+                        <ion-card-subtitle>SYMPTOMS CHECK</ion-card-subtitle>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+    
+        </ion-grid>
+
+        <swiper [autoplay]="true" [keyboard]="true" [pagination]="false" [slidesPerView]="2" [loop]="true"  effect="cards" >
+            <ng-template swiperSlide><img src="../../../assets/image/DHF.jpg" alt="" srcset=""> </ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/HH.jpg" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/FD.jpg" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/DT.jpg" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/pp1.jpg" alt="" srcset=""></ng-template>
+        </swiper>  
+        <ion-fab horizontal="end" >
+            <ion-fab-button>
+                <ion-icon name="newspaper-outline"></ion-icon>
+            </ion-fab-button>
+            <div>HEALTH NEWS</div>
+        </ion-fab>
+        <ion-text color="primary">
+        <h5>BUY PREMIUM QUALITY </h5>
+        </ion-text>
+        <swiper [autoplay]="true" [keyboard]="true" [pagination]="false" [zoom]="true" [slidesPerView]="2" [loop]="true">
+            <ng-template swiperSlide><img src="../../../assets/image/c-checklist1.jpg" alt="" srcset=""> </ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/cons.jpg" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/first-aid-kit-white-table-full-set-emergency-medicine-medication-giving-first-aid-sick-injured-person-white-background_123211-687.jpg" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/hpp.png" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/hmp.jpg" alt="" srcset=""></ng-template>           
+        </swiper>
+        <ion-grid>
+            <ion-row>
+                <ion-col class="buy_card">
+                    <ion-card  >
+                        <ion-badge color="warning"><ion-icon name="card-outline" ></ion-icon></ion-badge>
+                        <ion-avatar >
+                            <img src="../../../assets/image/drugs.jpg">
+                        </ion-avatar>
+
+                        <ion-label color="dark">Pharmacy drugs</ion-label>
+                    </ion-card>
+                </ion-col>
+                <ion-col class="buy_card">
+                    <ion-card >
+                            <ion-badge color="warning"><ion-icon name="card-outline" ></ion-icon></ion-badge>
+                            <ion-avatar>
+                            <img src="../../../assets/image/hdp.jpg">
+                        </ion-avatar>
+                        <ion-label color="dark">Naturopath drugs</ion-label>
+                    </ion-card>
+                </ion-col>
+                <ion-col class="buy_card">
+                    <ion-card >
+                            <ion-badge color="warning"><ion-icon name="card-outline" ></ion-icon></ion-badge>
+                            <ion-avatar>
+                            <img src="../../../assets/image/bbyk.jpg">
+                        </ion-avatar>
+                        <ion-label color="dark">Cheap baby kit</ion-label>
+                    </ion-card>
+                </ion-col>
+            </ion-row >
+        </ion-grid>
+        <ion-button expand="full" color="dark" class="more" ><p>More.....</p></ion-button>
+        <ion-text color="primary">
+            <h5>FREE OF CHARGE</h5>
+        </ion-text>
+        <swiper [autoplay]="true" [keyboard]="true" [pagination]="false" [zoom]="true" [slidesPerView]="2" [loop]="true">
+            <ng-template swiperSlide><img src="../../../assets/image/condom.jpg" alt="" srcset=""> </ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/net.jpg" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/vacc.png" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/MP.jpg" alt="" srcset=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/image/MC.jpg" alt="" srcset=""></ng-template>           
+        </swiper>
+        <ion-grid>
+                <ion-row>
+                    <ion-col class="buy_card">
+                        <ion-card  >
+                            <ion-avatar >
+                                <img src="../../../assets/image/condom1.jpg">
+                            </ion-avatar>
+    
+                            <ion-label color="dark">condoms and pills</ion-label>
+                        </ion-card>
+                    </ion-col>
+                    <ion-col class="buy_card">
+                        <ion-card >
+                            <ion-avatar>
+                                <img src="../../../assets/image/net.jpg">
+                            </ion-avatar>
+                            <ion-label color="dark">mosquito nets</ion-label>
+                        </ion-card>
+                    </ion-col>
+                    <ion-col class="buy_card">
+                        <ion-card >
+                            <ion-avatar>
+                                <img src="../../../assets/image/vacc.png">
+                            </ion-avatar>
+                            <ion-label color="dark">basic vaccination</ion-label>
+                        </ion-card>
+                    </ion-col>
+                </ion-row >
+            </ion-grid>
+            <ion-button expand="full" color="dark" class="more" ><p>More.....</p></ion-button>
+
+    </ion-content>

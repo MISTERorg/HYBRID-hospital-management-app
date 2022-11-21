@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register User</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form >
+    <ion-card>
+      <ion-item>
+        <ion-label  position="floating" >First Name</ion-label>
+        <ion-input type="text" autocomplete="" autofocus="true" inputmode="text" name="fname" autocapitalize="sentences"  required></ion-input>  
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Last Name</ion-label>
+        <ion-input type="text" autocomplete="" inputmode="text" name="lname"  autocapitalize="" required></ion-input>  
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email Address</ion-label>
+        <ion-input type="email" autocomplete=""  inputmode="email" name="" #email required></ion-input>                                                                                                                                                                                                                                                    
+
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input  type="password" name="pasword" #password required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password"  name="confirm_pasword" #Cpassword  inputmode="email" required ></ion-input>  
+      </ion-item>
+      <ion-button class="next" expand="block" shape="round" size="small" type="submit" (click)="signUp(email, password,Cpassword)">Next</ion-button>   
+       
+    </ion-card>
+    
+  </form>
+
+</ion-content>
