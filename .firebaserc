@@ -1,0 +1,15 @@
+{
+  "targets": {
+    "mister-4e3cb": {
+      "hosting": {
+        "app": [
+          "mister-4e3cb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mister-4e3cb"
+  }
+  
+}
