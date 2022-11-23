@@ -1,0 +1,73 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/admin-home"></ion-back-button>
+        </ion-buttons>  
+  </ion-toolbar>
+</ion-header>
+<ion-fab  class="log1" vertical="top"  >
+  <img src="../../../assets/image/angel beautiful white wings.png" alt="" srcset="">
+</ion-fab >
+<ion-content [fullscreen]="true">
+  <ion-list>
+  <ion-item>
+    <ion-label position="floating">Enter the "session" data</ion-label>
+    <ion-input [(ngModel)]="state.session"></ion-input>
+  </ion-item>
+  <ion-item>
+    <div style="flex: auto">
+      <ion-button expand="block" (click)="setSession(state.session)">Set Session Data</ion-button>
+    </div>
+  </ion-item>
+  <ion-item>
+  <div style="flex: auto">
+  <ion-button expand="block" (click)="restoreSession()">Restore Session Data</ion-button>
+  </div>
+  </ion-item>
+  <ion-item>
+  <div style="flex: auto">
+  <ion-button expand="block" (click)="lockVault()">Lock Vault</ion-button>
+  </div>
+  </ion-item>
+  <ion-item>
+  <div style="flex: auto">
+  <ion-button expand="block" (click)="unlockVault()">Unlock Vault</ion-button>
+  </div>
+  </ion-item>
+  <ion-item>
+  <ion-label>Use Privacy Screen</ion-label>
+  <ion-checkbox [(ngModel)]="state.privacyScreen" (ionChange)="setPrivacyScreen()"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-radio-group [(ngModel)]="state.lockType" (ionChange)="setLockType()">
+  <ion-list-header>
+  <ion-label> Vault Locking Mechanism </ion-label>
+  </ion-list-header>
+  <ion-item>
+  <ion-label>Do Not Lock</ion-label>
+  <ion-radio value="NoLocking"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Use Biometrics</ion-label>
+  <ion-radio [disabled]="!state.canUseBiometrics" value="Biometrics"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Use System Passcode</ion-label>
+  <ion-radio [disabled]="!state.canUsePasscode" value="SystemPasscode"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  </ion-item>
+  <ion-item>
+  <div style="flex: auto">
+  <ion-button expand="block" (click)="clearVault()">Clear Vault</ion-button>
+  </div>
+  </ion-item>
+  <ion-item>
+  <ion-label>
+  <div>Session Data: {{ state.session }}</div>
+  <div>Vault is locked: {{ state.isLocked }}</div>
+  <div>Vault is empty: {{ state.isEmpty }}</div>
+  </ion-label>
+  </ion-item>
+  </ion-list>
+</ion-content>
