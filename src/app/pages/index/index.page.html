@@ -1,0 +1,83 @@
+<ion-header>
+  <swiper [autoplay]="true"  [loop]="true" [pagination]="false"  effect="fade"  >
+    <ng-template swiperSlide> <img src="../../../assets/image/background blue.png" alt="" srcset=""  ></ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/background black.png" alt="" srcset=""> </ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/background pink.png" alt="" srcset=""></ng-template>
+    <ng-template swiperSlide> <img src="../../../assets/image/background RED.png" alt="" srcset=""> </ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/background violet.png" alt="" srcset=""></ng-template>
+ </swiper>
+</ion-header>
+
+<ion-fab  class="log3"  vertical="top" horizontal="start"  >
+  <ion-fab-button class="menu1"  >
+    <ion-icon name="menu" ></ion-icon>
+  </ion-fab-button>
+</ion-fab > 
+<ion-fab  class="log1" vertical="top"  >
+  <img src="../../../assets/image/angel beautiful white wings.png" alt="" srcset="">
+</ion-fab >
+<ion-fab  vertical="top" horizontal="end" (click)="openModal()">
+  <ion-fab-button class="search" size="medium" >
+      <img src="../../../assets/image/blu.png" alt="" srcset="" class="log2">
+  </ion-fab-button>  
+</ion-fab >
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content>
+                        <img src="../../../assets/image/consult.png" alt="" srcset="">
+                    </ion-card-content>
+                    <ion-card-subtitle>make appointment</ion-card-subtitle>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content>
+                        <img src="../../../assets/image/videoC.png" alt="" srcset="">
+                    </ion-card-content>
+                    <ion-card-subtitle>video consultation </ion-card-subtitle>
+                </ion-card>
+            </ion-col>
+        </ion-row >
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content>
+                        <img src="../../../assets/image/chat.png" alt="" srcset="">
+                    </ion-card-content>
+                    <ion-card-subtitle>message chat for advices</ion-card-subtitle>
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content>
+                        <img src="../../../assets/image/help1.png" alt="" srcset="">
+                    </ion-card-content>
+                    <ion-card-subtitle>check my symptoms</ion-card-subtitle>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+  <swiper [autoplay]="true" [keyboard]="true" [pagination]="true" [loop]="true"  effect="cube"  >
+    <ng-template swiperSlide><img src="../../../assets/image/DHF.jpg" alt="" srcset=""> </ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/HH.jpg" alt="" srcset=""></ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/FD.jpg" alt="" srcset=""></ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/DT.jpg" alt="" srcset=""></ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/pp1.jpg" alt="" srcset=""></ng-template>
+  </swiper>  
+  <swiper [autoplay]="true" [keyboard]="true" [pagination]="false" [zoom]="true" [slidesPerView]="3" [loop]="true">
+    <ng-template swiperSlide><img src="../../../assets/image/DHF.jpg" alt="" srcset=""> </ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/HH.jpg" alt="" srcset=""></ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/FD.jpg" alt="" srcset=""></ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/DT.jpg" alt="" srcset=""></ng-template>
+    <ng-template swiperSlide><img src="../../../assets/image/pp1.jpg" alt="" srcset=""></ng-template>
+    
+  </swiper>
+  
+</ion-content>
+

@@ -1,0 +1,70 @@
+ion-content{
+    --background: rgb(10, 100, 235);
+    border-radius: 20px;
+}
+//inner modal
+.container{
+ 
+    bottom: 0px;
+    overflow: hidden;
+    ion-card{
+        overflow: visible;
+      --background: rgb(255, 255, 255);
+      padding: 10px;
+    }
+    p{
+        color: rgb(10, 100, 235) ;
+        font-size: 4.3vw;
+        padding: 2px;
+    }
+    .exclam{
+        color: rgb(255, 0, 204);
+    }
+  
+  
+}
+ion-card{
+    --background: rgb(10, 100, 235);
+    animation: swirl 0.6s ease-in both;
+    @keyframes swirl {
+        0%{
+            transform: rotate(-360deg) scale(0);
+            opacity: 0;
+        }
+        100%{
+            transform: rotate(0deg) scale(1);
+            opacity: 1;
+        }
+    }
+}
+//logo
+
+.register_logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    ion-thumbnail{
+        --size: 35%;
+        text-align: center;
+        height: 35%;
+    
+    }
+}
+//signup text and button
+.login_head{
+    display: block;
+    text-align: center;
+    ion-button{
+       
+        --background: rgb(0, 217, 255);
+        }
+    //button animation
+   
+    
+
+
+    
+    
+}
+
+//lobin inputs

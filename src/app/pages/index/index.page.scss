@@ -1,0 +1,70 @@
+// header
+
+  .log1{
+    height: 60px;
+    width:100%;
+    top: 15px;
+    text-align: center;
+    z-index: 100;
+}
+.log1 img{
+  width: 60px;
+}
+.log2{
+  width:35px;
+  top: 20px;
+  right: 10px;
+  z-index: 100;
+}
+.menu1{
+  --background: none;
+  --background-hover-opacity: 0;
+  --background: none;
+  --background-activated:35px rgba(0, 0, 0, 0);
+  --background-activated-opacity:0;
+  --background-focus:35px rgba(0, 0, 0, 0);
+  --background-focus-opacity:0;
+  --box-shadow:none;
+  --border-style:none;
+
+  --border:none;
+  --margin:none;
+  width:35px;
+  z-index: 100;
+}
+.search{
+  --background: none;
+  --background-hover-opacity: 0;
+  --background: none;
+  --background-activated:35px rgba(0, 0, 0, 0);
+  --background-activated-opacity:0;
+  --background-focus:35px rgba(0, 0, 0, 0);
+  --background-focus-opacity:0;
+  --box-shadow:none;
+  --border-style:none;
+
+  --border:none;
+  --margin:none;
+  width:35px;
+  z-index: 100;
+}
+// haeder color swap
+
+// 2nd  carousel
+@import '~swiper/scss';
+@import '~@ionic/angular/css/ionic-swiper';
+
+.swiper {
+  width: 100%;
+  object-fit: cover;
+
+}
+ion-slides{
+  --bullet-background:rgb(10, 100, 235);
+  --bullet-background-active:rgb(125, 235, 0);
+}
+.swiper .swiper-slide img{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 50%;
+}

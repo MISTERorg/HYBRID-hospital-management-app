@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ionic Firebase Recover Passowrd Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list #slidingList>
+    <ion-item-sliding *ngFor="let message of messages; trackBy: trackByFn">
+      <ion-item (click)="toggleCheck(message)">
+        <p [class.checked]="message.checked">{{message.text}}</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger" (click)="deleteMessage(message.id)">
+          <ion-icon name="trash-outline"></ion-icon>
+        </button>
+        <button ion-button color="success" (click)="updateMessage(message)">
+          <ion-icon name="create-outline"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab>
+    <ion-fab-button (click)="addItem()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div [ngClass]="showForm? 'form-open': 'form-closed'" class="form">
+    <ion-list>
+      <ion-item class="no-border">
+        <div class="new-task">
+          <span>ADD NEW TASK</span>
+        </div>
+        <ion-icon class="close" name="arrow-down-outline" slot="end" (click)="showForm=false"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="floating">Email Address</ion-label>
+        <ion-input [(ngModel)]="model.text"></ion-input>
+      </ion-item>
+        <ion-button (click)="addMessage()" size="large" expand="block">Save</ion-button>
+    </ion-list>
+  </div>
+</ion-content>
